@@ -1,0 +1,94 @@
+/*this styling page goes to the index.html page or splash page*/
+
+html {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-family: Arial;
+    height: 100%;
+
+
+}
+
+
+h1 {margin:0;}
+
+.container {
+    padding: 2em;
+    background:white;
+    border-radius: 8px;
+    position: absolute;
+    top:50%; left:50%;
+    margin-top:-43px;
+    margin-left:-43px;
+    margin-bottom: 40%;
+
+
+}
+
+.txtfld {
+    width: calc(100% - 2em);
+    padding:1em;
+    margin-top: 1em;
+}
+.btn {
+    width:100%;
+    background:#00c3ff;
+    color:white;
+    margin-top:2em;
+    border:none;
+    border-radius:5px;
+    padding:1em;
+    font-size:1.2em;
+
+
+}
+
+
+
+.msg {
+    padding: .5em;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    opacity: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh
+
+}
+
+.myself{
+    border-radius: 50%;
+}
+
+
+blockquote {
+    width: 75%;
+    padding: 20px;
+    background: #0fddaf; /* Fall-back for browsers that don't support rgba */
+    background: rgba(15, 221, 175, .15);
+    margin-left: 20px;
+    float: right;
+}
+
+*{
+    margin:0; padding:0;
+}
+
+
+.wrapper{
+    width:100%; height:auto; overflow: hidden;
+}
+canvas{
+    background: #000;
+}
+img{
+    margin-top: 5em;
+    margin-left: 5em;
+}
