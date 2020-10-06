@@ -7,7 +7,7 @@
 
 
 /*this property will hide all the left and right extra space*/
-header,
+
 section {
     overflow-x: hidden;
 
