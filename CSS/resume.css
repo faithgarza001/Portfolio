@@ -11,7 +11,7 @@
 
 
 /*this property will hide all the left and right extra space*/
-header, section {
+header{
     overflow-x: hidden;
 
 }
@@ -154,6 +154,18 @@ header .container .col-md-7 p {
     margin: 50px auto;
 }
 
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
 .resume .resume_left{
     width: 280px;
     background-color: #0bb5f4;
@@ -193,7 +205,7 @@ header .container .col-md-7 p {
 }
 
 .resume .resume_left .resume_item:last-child{
-    border-bottom: 0;
+    border-bottom: 0px;
 }
 
 .resume .resume_left ul li{
@@ -210,7 +222,7 @@ header .container .col-md-7 p {
 .resume .resume_left ul li .icon{
     width: 35px;
     height: 35px;
-    background: #ffffff;
+    background: #fff;
     color:#0bb5fa;
     border-radius: 50%;
     margin-right:15px;
@@ -255,9 +267,25 @@ header .container .col-md-7 p {
     top:0;
     left:0;
     height: 100%;
+    background: white;
+}
 
+.resume .resume_right{
+    width: 520px;
+    background: white;
+    padding: 25px;
 
+}
 
+/*Work Experience and education and skills text*/
+.resume .resume_right .bold{
+    color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education{
+    padding-left: 40px;
+    overflow: hidden;
 }
 
 
@@ -266,6 +294,10 @@ header .container .col-md-7 p {
 
 
 
+
+
+
+/*BEGINNING OF FOOTER*/
 footer {
     background: rgba(0, 0, 0, 0.815);
     overflow-x: hidden;
@@ -309,96 +341,6 @@ footer .column i + i {
 }
 
 
-
-.book-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 600px;
-}
-
-@keyframes initAnimation {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(-30deg);
-    }
-}
-
-.book {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateY(-30deg);
-    transition: 1s ease;
-    animation: 1s ease 0s 1 initAnimation;
-}
-
-.book:hover {
-    transform: rotateY(0deg);
-}
-
-.book > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 300px;
-    transform: translateZ(25px);
-    background-color: #01060f;
-    border-radius: 0 2px 2px 0;
-    box-shadow: 5px 5px 20px #666;
-    overflow: hidden;
-}
-
-.book::before {
-    overflow: hidden;
-    position: absolute;
-    content: ' ';
-    left: 0;
-    top: 3px;
-    width: 51px;
-    height: 294px;
-    transform: translateX(155px) rotateY(78deg);
-    background: blue linear-gradient(90deg,
-    #fff 0%,
-    #f9f9f9 5%,
-    #fff 10%,
-    #f9f9f9 15%,
-    #fff 20%,
-    #f9f9f9 25%,
-    #fff 30%,
-    #f9f9f9 35%,
-    #fff 40%,
-    #f9f9f9 45%,
-    #fff 50%,
-    #f9f9f9 55%,
-    #fff 60%,
-    #f9f9f9 65%,
-    #fff 70%,
-    #f9f9f9 75%,
-    #fff 80%,
-    #f9f9f9 85%,
-    #fff 90%,
-    #f9f9f9 95%,
-    #fff 100%
-    );
-}
-
-.book::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: ' ';
-    width: 200px;
-    height: 300px;
-    transform: translateZ(-25px);
-    background-color: #01060f;
-    border-radius: 0 2px 2px 0;
-    box-shadow: -10px 0 50px 10px #666;
-}
 
 .sticky{
     position: fixed;
