@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Developer Profile</title>
+    <link rel="stylesheet" href="CSS/new.css">
+
+
 </head>
+
 <body>
-<h1>hello</h1>
+
+
+
+<div class="container-one">
+    <img align="left" alt="Me" class="myself" height="120" src="img/self.png" width="120"><br>
+    <blockquote><h2>“No masterpiece was ever created by a lazy artist.” ― Salvador Dali</h2></blockquote>
+
+    <!---NAV SIDEBAR--------------->
+
+
+    <!--<script crossorigin src="react-animations/node_modules/"></script>-->
+    <div class="container" style="width: 50%">
+
+        <h1>Welcome to my personal profile,<br> what would you <br> like to do?</h1>
+        <p>Please, Never stop believing in yourself! Thanks.</p>
+
+        <form action="addperson.json" method="post">
+
+            <input class="btn" onclick="window.location.href='skillsHomepage.html' " type="button" value="View Portfolio">
+
+            <span class="msg">Full name please!</span>
+
+            <input class="txtfld" type="text" name="firstname" placeholder="First-name"/><br>
+
+            <input class="txtfld"  type="text" name="lastname" placeholder="Last-name"/><br>
+
+            <input class="txtfld" type="text" name="email" placeholder="Email"/><br>
+
+            <input type="submit" value="Contact me" class="btn" name="contact-me" >
+
+        </form>
+
+    </div>
+</div>
+
+
+
+
+<script src="node_modules/popmotion/dist/popmotion.global.min.js"></script>
+<script src="js/home.js"></script>
+
+
+
+
 </body>
 </html>
