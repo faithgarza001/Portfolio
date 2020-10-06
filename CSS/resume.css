@@ -22,7 +22,7 @@ header{
     --Patua: "Patua One", cursive;
     --Lobster: "lobster", cursive;
     --light-black: #2e2c2caf;
-    --bggradient: linear-gradient( #DC143C, #ff512f, #f88551);
+    --bggradient: linear-gradient( #DC143C, #ff512f, #f3aa88);
     --light-gray: rgba(255, 255, 255, 0.877);
 
 
@@ -175,7 +175,7 @@ header .container .col-md-7 p {
 
 .resume .resume_left{
     width: 280px;
-    background-color: #0bb5f4;
+    background-color: #F3AA88;
 }
 
 .resume .resume_left .resume_profile{
@@ -203,12 +203,12 @@ header .container .col-md-7 p {
 }
 
 .resume .resume_left .regular{
-    color: #b1eaff;
+    color: #d9470e;
 }
 
 .resume .resume_item{
     padding:25px 0;
-    border-bottom:  2px solid #b1eaff;
+    border-bottom:  2px solid #d9470e;
 }
 
 .resume .resume_left .resume_item:last-child,
@@ -231,7 +231,7 @@ header .container .col-md-7 p {
     width: 35px;
     height: 35px;
     background: #fff;
-    color:#0bb5fa;
+    color:#d9470e;
     border-radius: 50%;
     margin-right:15px;
     font-size: 16px;
@@ -247,13 +247,13 @@ header .container .col-md-7 p {
 }
 
 .resume .resume_left ul li .data{
-     color: #b1eaff;
+     color: #d9470e;
 }
 
 .resume .resume_left .resume_skills ul li{
     display:flex;
     margin-bottom: 10px;
-    color: #b1eaff;
+    color: #d9470e;
     justify-content: space-between;
     align-items: center;
 }
@@ -266,7 +266,7 @@ header .container .col-md-7 p {
     width: 60%;
     margin: 0 5px;
     height: 5px;
-    background: #009fd9;
+    background: #ffffff;
     position: relative;
 }
 
@@ -279,7 +279,7 @@ header .container .col-md-7 p {
     top:0;
     left:0;
     height: 100%;
-    background: white;
+    background: #d9470e;
 }
 
 .resume .resume_right{
@@ -303,7 +303,7 @@ header .container .col-md-7 p {
 
 /*Work Experience and education and skills text*/
 .resume .resume_right .bold{
-    color: #0bb5f4;
+    color: #DC143C;
 }
 
 .resume .resume_right .resume_work ul,
@@ -341,7 +341,7 @@ header .container .col-md-7 p {
     width:6px;
     height: 6px;
     border-radius:50%;
-    border: 2px solid #0bb5f4;
+    border: 2px solid #d9470e;
 }
 
 /*Lines that go through bullets point dots*/
@@ -353,7 +353,7 @@ header .container .col-md-7 p {
     left: -21px;
     width: 2px;
     height: 115px;
-    background: #0bb5f4;
+    background: #d9470e;
 }
 
 
@@ -365,10 +365,11 @@ header .container .col-md-7 p {
 .resume .resume_right .resume_hobby ul li {
     width: 80px;
     height: 80px;
-    border: 2px solid #0bb5f4;
+    /*color:linear-gradient( #DC143C, #ff512f, #f3aa88);*/
+    border: 2px solid #DC143C;
     border-radius: 50%;
     position: relative;
-    color: #0bb5f4;
+    color: #ff512f;
 }
 
 .resume .resume_right .resume_hobby ul li i {
@@ -382,7 +383,7 @@ header .container .col-md-7 p {
     right: -52px;
     width: 50px;
     height: 2px;
-    background: #0bb5f4;
+    background: #d9470e;
 }
 /*takes away last line on last li element*/
 .resume .resume_right .resume_hobby ul li:last-child:before {
