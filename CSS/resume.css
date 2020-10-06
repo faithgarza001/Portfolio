@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 /*below the * represents all elements*/
 * {
-    box-sizing: border-box;
+
     margin:0;
     padding:0;
     list-style: none;
@@ -166,6 +166,13 @@ header .container .col-md-7 p {
 
 }
 
+.resume {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
 .resume .resume_left{
     width: 280px;
     background-color: #0bb5f4;
@@ -204,14 +211,15 @@ header .container .col-md-7 p {
     border-bottom:  2px solid #b1eaff;
 }
 
-.resume .resume_left .resume_item:last-child{
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child{
     border-bottom: 0px;
 }
 
 .resume .resume_left ul li{
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .resume .resume_left ul li:last-child{
@@ -230,7 +238,8 @@ header .container .col-md-7 p {
     position: relative;
 }
 
-.resume .icon i{
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i{
     position: absolute;
     top:50%;
     left: 50%;
@@ -242,15 +251,18 @@ header .container .col-md-7 p {
 }
 
 .resume .resume_left .resume_skills ul li{
+    display:flex;
+    margin-bottom: 10px;
     color: #b1eaff;
     justify-content: space-between;
+    align-items: center;
 }
 
 .resume .resume_left .resume_skills ul li .skill_name{
     width: 25%;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress{
+.resume .resume_left .resume_skills ul li .skill_progress {
     width: 60%;
     margin: 0 5px;
     height: 5px;
@@ -277,6 +289,18 @@ header .container .col-md-7 p {
 
 }
 
+.resume .resume_left .resume_social .semi-bold {
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.resume .resume_right {
+    width: 520px;
+    background: #fff;
+    padding: 25px;
+}
+
+
 /*Work Experience and education and skills text*/
 .resume .resume_right .bold{
     color: #0bb5f4;
@@ -288,8 +312,82 @@ header .container .col-md-7 p {
     overflow: hidden;
 }
 
+.resume .resume_right ul li{
+    position: relative;
+}
 
 
+.resume .resume_right ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info{
+    margin-bottom: 20px;
+
+}
+
+.resume .resume_right ul li:last-child .info{
+    margin-bottom: 0;
+}
+/*circular bullets*/
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul:before{
+    content: "";
+    position: absolute;
+    top:5px;
+    left:-25px;
+    width:6px;
+    height: 6px;
+    border-radius:50%;
+    border: 2px solid #0bb5f4;
+}
+
+/*Lines that go through bullets point dots*/
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul:after{
+    content: "";
+    position: absolute;
+    top:14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    background: #0bb5f4;
+}
+
+
+.resume .resume_right .resume_hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+    font-size: 30px;
+}
+/*the lines between circles on hobby*/
+.resume .resume_right .resume_hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: #0bb5f4;
+}
+/*takes away last line on last li element*/
+.resume .resume_right .resume_hobby ul li:last-child:before {
+    display: none;
+}
 
 
 
