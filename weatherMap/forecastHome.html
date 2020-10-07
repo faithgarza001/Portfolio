@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Weather Pro</title>
     <meta charset="UTF-8">
-    <title>Weather Map App</title>
+    <meta name="viewport, content=width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <!-- bootstrap css cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- screen.css file -->
     <link rel="stylesheet" href="screen.css">
+
+    <!---FAVICON ICONS---->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mak"
+
+
+
+
+
     <!-- jquery and bootstrap js files cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
@@ -38,7 +51,7 @@
         </div>
 </div>
 </div>
-
-<script src="weather.js"></script>
+<!---you must put module due to having api key as module imported from .env which is tied to npm-->
+<script type="module" src="weather.js"></script>
 </body>
 </html>
