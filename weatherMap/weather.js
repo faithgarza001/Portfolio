@@ -4,7 +4,6 @@
 /**DO NOT TOUCH THE CODE BELOW IT IS CONFIGURATIONS OF API KEY*/
 //Video Code
 
-const api_url = `https://api.darksky.net/forecast/9e01a4f79b3c8901d74b0fdf67e0ea98/37.8267,-122.4233`
 
 
 

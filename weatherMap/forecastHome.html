@@ -1,57 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Weather Pro</title>
-    <meta charset="UTF-8">
-    <meta name="viewport, content=width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-    <!-- bootstrap css cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- screen.css file -->
-    <link rel="stylesheet" href="screen.css">
 
-    <!---FAVICON ICONS---->
+<head>
+    <title>Weather Pro by Coder Foundry</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uwe4jcq.css">
+
+    <!--Fav icon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/images/site.webmanifest">
-    <link rel="mak"
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--End Fav icon-->
 
-
-
-
-
-    <!-- jquery and bootstrap js files cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
+    <script src="keys.js"></script>
+    <script src="weather.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-<h1>Forecast "We are home"</h1>
 
-<!----div container---->
-<div class="container">
-    <div id=heading>
-        <h1>Today's Weather</h1>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-xs-8 col-xs-push-2 col-md-push-3">
-            <div class="weather text-center">
-                <h2 class="temp"></h2>
-                <h3><span class="city"></span> <span class="country"></span></h3>
-                <div class="iconpic">
-                    <img src="" class='img img-responsive center-block'>
-                </div>
-                <h4>"WeatherDetail</h4>
-                <div class="toggle" id="c">
-                    <button type="button" class="btn btn-danger btn-lg">Toggle Temperature</button>
+<body>
+<div class="wpBackground">
+    <!---CREATING THE FIRST COLUMN--->
+    <div class="d-flex flex-column h-100">
+        <div id="wpMain" class="container">
+            <!----title row--->
+            <div class="row">
+                <div id="wpTitle" class="col text-center">
+                    WEATHER PRO
                 </div>
             </div>
         </div>
+    </div>
 </div>
-</div>
-<!---you must put module due to having api key as module imported from .env which is tied to npm-->
-<script type="module" src="weather.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 </body>
+
 </html>
+
+
+

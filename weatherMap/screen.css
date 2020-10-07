@@ -1,28 +1,26 @@
 body{
-    background: url("weather.jpeg");
+    height:100%;
+    background: cadetblue linear-gradient(to right, rgb(121, 145, 187), rgb(174, 201, 248), rgb(148, 186, 252));
+}
+
+.wpBackground{
+    height:100vh;
+    min-height: 500px;
+    /*Background image*/
+    background:url('images/UmbrellaBG.jpg') no-repeat center center fixed;
+   /*Below are fallbacks to cover on all platforms*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
-#heading{
-    font-family: 'Slabo 27px', sans-serif;
-}
+/*#forecastTab li a.active{*/
+/*    border-bottom-color: transparent;*/
+/*    background-color: var(--CFColors-Orange-rgba);*/
+/*}*/
 
-.weather{
-    background-color: rgba(236, 240, 241, 0.8);
-    padding: 35px 0px;
-    border-radius: 5px;
-}
 
-.weather .temp{
-    margin-top:0px;
-}
 
-.weather .iconpic img{
-    min-width: 150px;
-    min-height: 150px;
-}
 
-a{
-    text-decoration: underline;
-    color: inherit;
-}
+
