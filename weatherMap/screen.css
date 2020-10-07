@@ -77,7 +77,71 @@ body{
     color: white;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--CFColors-darkGrey-rgba);
 }
+
+#wpConditions{
+    background-color: var(--CFColors-Orange-rgba);
+    color: white;
+    padding: 20px;
+    resize: vertical;
+}
+
+#wpForecast{
+    background-color: var(--CfColors-darkBlue-rgba);
+    color: white;
+    padding: 20px;
+    resize: vertical;
+    font-size: 1em;
+}
+
+#wpFooter{
+    font-size: 1em;
+    color: var(--CFColors-darkGrey-rgba);
+}
+/*Small device responsiveness*/
+@media(min-width: 576px){
+    #wpTitle{
+        font-size: 1.5em;
+    }
+    #wpCurrent,
+    #wpConditions{
+        font-size: 1.5em;
+    }
+}
+/*Medium Device (tablets, 770px and up) the navbar toggle is visible at this size*/
+@media (min-width: 768px) {
+    #wpTitle {
+        font-size: 2em;
+    }
+
+    #wpCurrent,
+    #wpConditions {
+        font-size: 1.5em;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #wpTitle {
+        font-size: 2em;
+    }
+
+    #wpCurrent,
+    #wpForcast {
+        font-size: 1.5em;
+    }
+
+
+}
+
+@media (min-width :992px) {
+    #wpBackground {
+        font-size: 1em;
+    }
+}
+
+
 
 
 img{

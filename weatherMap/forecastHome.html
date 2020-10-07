@@ -52,11 +52,62 @@
                             </div>
                         </div>
                         <div class="col-sm">
-                            <img id="weatherIcon" class="img-fluid" src="images/mostlySunny.jpg">
+                            <img id="weatherIcon" class="img-fluid" src="images/mostlySunny.jpg" alt="notFound">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div id="wpConditions" class="col-md">
+                    <div class="row">
+                        <div id="perciptation" class="col-md">Percepitation 20%</div>
+                    </div>
+                    <div class="row">
+                        <div id="humidty" class="col-md">Humidity 95%</div>
+                    </div>
+                    <div class="row">
+                        <div id="wind" class="col-md">Wind 14mph</div>
+                    </div>
+                </div>
+                <div id="wpForecast" class="col-md">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" id="forecastTab">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#weekly">Hourly</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" data-toggle="tab" href="#daily">Weekly</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <!----id must match href in unordered list to navigate to information---->
+                        <div class="tab-pane container active" id="daily">
+                            <table id="dailyForecast" width=100%>
+
+                            </table>
+                        </div>
+                        <div class="tab-pane container fade" id="weekly">
+                            <table id="weeklyForecast" width=100%>
+<!----JAVASCRIPT WILL WRITE THIS DATA------>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="wpFooter" class="col text-center">
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
