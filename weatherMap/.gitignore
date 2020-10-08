@@ -7,6 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 node_modules
-key.js
+keys.js
 .env
 weather.js

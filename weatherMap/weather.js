@@ -1,15 +1,22 @@
-const weekDay = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat"];
-const wMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+// $(document).ready(function() {
+//
+//     var proxy = 'https://cors-anywhere.herokuapp.com/';
+//     var apiLinkDS = "https://api.darksky.net/forecast/9e01a4f79b3c8901d74b0fdf67e0ea98/37.8267,-122.4233";
+//
+//     $.ajax({
+//         url: proxy + apiLinkDS,
+//         success:function(data) { console.log(data);}
+//     });
+//
+// });
+$(document).ready(function() {
 
-const iconValue = {
-    CLEARDAY:'clear-day',
-    CLEARNIGHT: 'clear-night',
-    RAIN:'rain',
-    SNOW:'snow',
-    SLEET:'sleet',
-    WIND:'wind',
-    FOG:'fog',
-    CLOUDY:'cloudy',
-    PARTLY_CLOUDY_DAY:'partly-cloudy-day',
-    PARTLY_CLOUDY_NIGHT:'partly-cloud-night'
-}
+    var proxy = 'https://cors-anywhere.herokuapp.com/';
+    var apiLinkDS = "https://api.darksky.net/forecast/"+ DARKSKY_SECRET +"/37.8267,-122.4233";
+
+    $.ajax({
+        url: proxy + apiLinkDS,
+        success:function(data) { console.log(data);}
+    });
+
+});
