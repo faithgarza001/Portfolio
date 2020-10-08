@@ -1,6 +1,7 @@
 {
-  "name": "Portfolio",
+  "name": "module3",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +12,13 @@
   "license": "ISC",
   "homepage": "https://faithgarza001.github.io/index.html",
   "dependencies": {
+    "dark-sky-api": "^0.6.32",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "gh-pages": "^3.1.0",
-    "popmotion": "^9.0.0-rc.20"
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.1",
+    "popmotion": "^9.0.0-rc.20",
+    "request": "^2.88.2"
   }
 }
