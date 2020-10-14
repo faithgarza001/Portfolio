@@ -1,36 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Weather Pro by Coder Foundry</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="screen.css">
-<!--    <link rel="stylesheet" href="https://use.typekit.net/uwe4jcq.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href='screen.css'>
 
-    <!--Fav icon-->
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="/images/site.webmanifest">-->
-<!--    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">-->
-<!--    <meta name="msapplication-TileColor" content="#da532c">-->
-<!--    <meta name="theme-color" content="#ffffff">-->
-    <!--End Fav icon-->
 
-<!--    <script src="keys.js"></script>-->
-<!--    <script type="/module" src="weather.js"></script>-->
+    <script type='/module' src='weather.js'></script>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+    <title>Weather Pro by Coder Foundry</title>
 </head>
 
 <body>
-<h1>The Weather is Here</h1>
-<div id='root'>
+<div class="app-wrap">
+    <header>
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+        <section class="location">
+            <div class="city">Northampton, GB</div>
+            <div class="date">Thursday 10 January 2020</div>
+        </section>
+        <div class="current">
+            <div class="temp">15<span>°c</span></div>
+            <div class="weather">Sunny</div>
+            <div class="hi-low">13°c / 16°c</div>
+        </div>
+    </main>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<!--<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>-->
+<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+
 <script src="keys.js"></script>
 <script src="weather.js"></script>
 </body>

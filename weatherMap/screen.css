@@ -1,11 +1,435 @@
-html, body {
-    height: 100%;
-    width: 100%;
+/*!*!*html, body {*!*!*/
+/*!*!*    height: 100%;*!*!*/
+/*!*!*    width: 100%;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*div#currentLocation {*!*!*/
+/*!*!*    background-color: #CCCCCC;*!*!*/
+/*!*!*    vertical-align: center;*!*!*/
+/*!*!*    width: 100%;*!*!*/
+/*!*!*    padding: 8px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*body {*!*/
+/*!*    height: 100%;*!*/
+/*!*    background: cadetblue linear-gradient(to right, rgb(121, 145, 187), rgb(174, 201, 248), rgb(148, 186, 252));*!*/
+
+/*!*}*!*/
+
+/*!*.wpBackground {*!*/
+/*!*    height: 100vh;*!*/
+/*!*    min-height: 500px;*!*/
+/*!*    background: url(images/UmbrellaBG.jpg) no-repeat center center fixed;*!*/
+/*!*    -webkit-background-size: cover;*!*/
+/*!*    -moz-background-size: cover;*!*/
+/*!*    -o-background-size: cover;*!*/
+/*!*    background-size: cover;*!*/
+
+/*!*}*!*/
+
+/*!*#forecastTab li a.active {*!*/
+/*!*    border-bottom-color: transparent;*!*/
+/*!*    background-color: var(--CFColors-Orange-rgba);*!*/
+/*!*    color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*    font-weight: bold;*!*/
+/*!*}*!*/
+
+/*!*#forecastTab li a {*!*/
+/*!*    border-bottom-color: transparent;*!*/
+/*!*    !*background-color: var(--CFColors-ltGrey-rgba);*!*!*/
+/*!*    color: white;*!*/
+/*!*    font-weight: 400;*!*/
+/*!*}*!*/
+
+
+
+/*!*:root {*!*/
+
+/*!*    !* Color Theme Swatches in RGBA *!*!*/
+/*!*    --CFColors-darkGrey-rgba: rgba(33, 33, 33, 1);*!*/
+/*!*    --CFColors-grayBlue-rgba: rgba(44, 66, 81, .5);*!*/
+/*!*    --CfColors-darkBlue-rgba: rgba(0, 115, 171, .5);*!*/
+/*!*    --CFColors-Orange-rgba: rgba(247, 148, 29, .5);*!*/
+/*!*    --CFColors-ltGrey-rgba: rgba(223, 227, 228, .5);*!*/
+/*!*    --CFColors-Black-rgba: rgba(0, 0, 0, 1);*!*/
+/*!*}*!*/
+
+/*!*#weatherIcon {*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    height: auto;*!*/
+
+/*!*}*!*/
+
+/*!*#location {*!*/
+/*!*    font-weight: bolder;*!*/
+/*!*}*!*/
+
+/*!*#wpTitle {*!*/
+/*!*    font-family: titling-gothic-fb-wide, sans-serif;*!*/
+/*!*    font-weight: 700;*!*/
+/*!*    font-style: normal;*!*/
+/*!*    font-size: 1.5em;*!*/
+/*!*    color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*    -webkit-text-fill-color: white;*!*/
+/*!*    !* Will override color (regardless of order) *!*!*/
+/*!*    -webkit-text-stroke-width: 1.5px;*!*/
+/*!*    -webkit-text-stroke-color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*}*!*/
+
+/*!*#wpMain {*!*/
+/*!*    color: white;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    resize: vertical;*!*/
+/*!*}*!*/
+
+/*!*#wpCurrent {*!*/
+/*!*    background-color: var(--CFColors-grayBlue-rgba);*!*/
+/*!*    color: white;*!*/
+/*!*    resize: vertical;*!*/
+/*!*}*!*/
+
+/*!*#currentTemp {*!*/
+/*!*    font-size: 5em;*!*/
+/*!*    font-family: titling-gothic-fb-wide, sans-serif;*!*/
+/*!*    color: white;*!*/
+/*!*    -webkit-text-fill-color: white;*!*/
+/*!*    !* Will override color (regardless of order) *!*!*/
+/*!*    -webkit-text-stroke-width: 1.5px;*!*/
+/*!*    -webkit-text-stroke-color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*}*!*/
+
+/*!*#wpConditions {*!*/
+/*!*    background-color: var(--CFColors-Orange-rgba);*!*/
+/*!*    color: white;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    resize: vertical;*!*/
+
+/*!*}*!*/
+
+/*!*#wpForecast {*!*/
+/*!*    background-color: var(--CfColors-darkBlue-rgba);*!*/
+/*!*    color: white;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    resize: vertical;*!*/
+/*!*    font-size: 1em;*!*/
+/*!*}*!*/
+
+/*!*#wpFooter {*!*/
+/*!*    font-size: 1em;*!*/
+/*!*    color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*}*!*/
+
+/*!*#wpFooter div a {*!*/
+/*!*    font-size: 1em;*!*/
+/*!*    color: var(--CFColors-darkGrey-rgba);*!*/
+/*!*}*!*/
+
+/*!*!* Small devices (landscape phones, 576px and up) *!*!*/
+/*!*@media (min-width: 576px) {*!*/
+/*!*    #wpTitle {*!*/
+/*!*        font-size: 1.5em;*!*/
+/*!*    }*!*/
+
+
+/*!*    #wpCurrent,*!*/
+/*!*    #wpConditions {*!*/
+/*!*        font-size: 1.5em;*!*/
+/*!*    }*!*/
+/*!*}*!*/
+
+/*!*!* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint *!*!*/
+/*!*@media (min-width: 768px) {*!*/
+/*!*    #wpTitle {*!*/
+/*!*        font-size: 2em;*!*/
+/*!*    }*!*/
+
+/*!*    #wpCurrent,*!*/
+/*!*    #wpConditions {*!*/
+/*!*        font-size: 1.5em;*!*/
+/*!*    }*!*/
+/*!*}*!*/
+
+/*!*!* Large devices (desktops, 992px and up) *!*!*/
+/*!*@media (min-width: 992px) {*!*/
+/*!*    #wpTitle {*!*/
+/*!*        font-size: 2em;*!*/
+/*!*    }*!*/
+
+/*!*    #wpCurrent,*!*/
+/*!*    #wpForcast {*!*/
+/*!*        font-size: 1.5em;*!*/
+/*!*    }*!*/
+
+
+/*!*}*!*/
+
+/*!*@media (min-width :992px) {*!*/
+/*!*    #wpBackground {*!*/
+/*!*        font-size: 1em;*!*/
+/*!*    }*!*/
+/*!*}*!*/
+
+/*!*!* Extra large devices (large desktops, 1200px and up) *!*!*/
+/*!*@media (min-width: 1200px) {}*!*/
+
+
+/*body {*/
+/*    height: 100%;*/
+
+/*    background: cadetblue linear-gradient(to right, rgb(121, 145, 187), rgb(174, 201, 248), rgb(148, 186, 252));*/
+
+/*}*/
+
+/*.wpBackground {*/
+/*    height: 100vh;*/
+/*    min-height: 500px;*/
+/*    background: url(images/UmbrellaBG.jpg) no-repeat center center fixed;*/
+/*    -webkit-background-size: cover;*/
+/*    -moz-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-size: cover;*/
+
+/*}*/
+
+/*#forecastTab li a.active {*/
+/*    border-bottom-color: transparent;*/
+/*    background-color: var(--CFColors-Orange-rgba);*/
+/*    color: var(--CFColors-darkGrey-rgba);*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*#forecastTab li a {*/
+/*    border-bottom-color: transparent;*/
+/*    !*background-color: var(--CFColors-ltGrey-rgba);*!*/
+/*    color: white;*/
+/*    font-weight: 400;*/
+/*}*/
+
+
+
+/*:root {*/
+
+/*    !* Color Theme Swatches in RGBA *!*/
+/*    --CFColors-darkGrey-rgba: rgba(33, 33, 33, 1);*/
+/*    --CFColors-grayBlue-rgba: rgba(44, 66, 81, .5);*/
+/*    --CfColors-darkBlue-rgba: rgba(0, 115, 171, .5);*/
+/*    --CFColors-Orange-rgba: rgba(247, 148, 29, .5);*/
+/*    --CFColors-ltGrey-rgba: rgba(223, 227, 228, .5);*/
+/*    --CFColors-Black-rgba: rgba(0, 0, 0, 1);*/
+/*}*/
+
+/*#weatherIcon {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+
+/*}*/
+
+/*#location {*/
+/*    font-weight: bolder;*/
+/*}*/
+
+/*#wpTitle {*/
+/*    font-family: titling-gothic-fb-wide, sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*    font-size: 1.5em;*/
+/*    color: var(--CFColors-darkGrey-rgba);*/
+/*    -webkit-text-fill-color: white;*/
+/*    !* Will override color (regardless of order) *!*/
+/*    -webkit-text-stroke-width: 1.5px;*/
+/*    -webkit-text-stroke-color: var(--CFColors-darkGrey-rgba);*/
+/*}*/
+
+/*#wpMain {*/
+/*    color: white;*/
+/*    padding: 20px;*/
+/*    resize: vertical;*/
+/*}*/
+
+/*#wpCurrent {*/
+/*    background-color: var(--CFColors-grayBlue-rgba);*/
+/*    color: white;*/
+/*    resize: vertical;*/
+/*}*/
+
+/*#currentTemp {*/
+/*    font-size: 5em;*/
+/*    font-family: titling-gothic-fb-wide, sans-serif;*/
+/*    color: white;*/
+/*    -webkit-text-fill-color: white;*/
+/*    !* Will override color (regardless of order) *!*/
+/*    -webkit-text-stroke-width: 1.5px;*/
+/*    -webkit-text-stroke-color: var(--CFColors-darkGrey-rgba);*/
+/*}*/
+
+/*#wpConditions {*/
+/*    background-color: var(--CFColors-Orange-rgba);*/
+/*    color: white;*/
+/*    padding: 20px;*/
+/*    resize: vertical;*/
+
+/*}*/
+
+/*#wpForecast {*/
+/*    background-color: var(--CfColors-darkBlue-rgba);*/
+/*    color: white;*/
+/*    padding: 20px;*/
+/*    resize: vertical;*/
+/*    font-size: 1em;*/
+/*}*/
+
+/*#wpFooter {*/
+/*    font-size: 1em;*/
+/*    color: var(--CFColors-darkGrey-rgba);*/
+/*}*/
+
+/*#wpFooter div a {*/
+/*    font-size: 1em;*/
+/*    color: var(--CFColors-darkGrey-rgba);*/
+/*}*/
+
+/*!* Small devices (landscape phones, 576px and up) *!*/
+/*@media (min-width: 576px) {*/
+/*    #wpTitle {*/
+/*        font-size: 1.5em;*/
+/*    }*/
+
+
+/*    #wpCurrent,*/
+/*    #wpConditions {*/
+/*        font-size: 1.5em;*/
+/*    }*/
+/*}*/
+
+/*!* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint *!*/
+/*@media (min-width: 768px) {*/
+/*    #wpTitle {*/
+/*        font-size: 2em;*/
+/*    }*/
+
+/*    #wpCurrent,*/
+/*    #wpConditions {*/
+/*        font-size: 1.5em;*/
+/*    }*/
+/*}*/
+
+/*!* Large devices (desktops, 992px and up) *!*/
+/*@media (min-width: 992px) {*/
+/*    #wpTitle {*/
+/*        font-size: 2em;*/
+/*    }*/
+
+/*    #wpCurrent,*/
+/*    #wpForcast {*/
+/*        font-size: 1.5em;*/
+/*    }*/
+
+
+/*}*/
+
+/*@media (min-width :992px) {*/
+/*    #wpBackground {*/
+/*        font-size: 1em;*/
+/*    }*/
+/*}*/
+
+/*!* Extra large devices (large desktops, 1200px and up) *!*/
+/*@media (min-width: 1200px) {}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div#currentLocation {
-    background-color: #CCCCCC;
-    vertical-align: center;
-    width: 100%;
-    padding: 8px;
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('weather.jpeg');
+    background-size: cover;
+    background-position: top center;
 }
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #DF8E00;
+
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.current .temp {
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
