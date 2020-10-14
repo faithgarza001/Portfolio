@@ -343,12 +343,49 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'montserrat', sans-serif;
-    background-image: url('weather.jpeg');
-    background-size: cover;
-    background-position: top center;
+/*body {*/
+/*    font-family: 'montserrat', sans-serif;*/
+/*    background-image: url('weather.jpeg');*/
+/*    background-size: cover;*/
+/*    background-position: top center;*/
+/*}*/
+
+/*CLOUDS*/
+#viewport{
+    bottom: 0;
+    left:0;
+    overflow: hidden;
+    perspective: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
+
+/*CLOUDS*/
+#world{
+    height: 512px;
+    left: 50%;
+    margin-left: -256px;
+    margin-top: -256px;
+    position: absolute;
+    top:50%;
+    transform-style: preserve-3d;
+    width: 512px;
+}
+
+.cloudBase {
+    height: 20px;
+    left: 256px;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    top: 256px;
+    width: 20px;
+}
+
+
+
+
 
 .app-wrap {
     display: flex;
@@ -370,7 +407,7 @@ header input {
     padding: 10px 15px;
     border: none;
     outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
+    /*background-color: rgba(255, 255, 255, 0.3);*/
     border-radius: 16px 0px 16px 0px;
     border-bottom: 3px solid #DF8E00;
 
@@ -380,9 +417,9 @@ header input {
     transition: 0.2s ease-out;
 }
 
-header input:focus {
-    background-color: rgba(255, 255, 255, 0.6);
-}
+/*header input:focus {*/
+/*    background-color: rgba(255, 255, 255, 0.6);*/
+/*}*/
 
 main {
     flex: 1 1 100%;
