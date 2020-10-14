@@ -674,4 +674,15 @@ footer .column i + i {
 
 }
 
+button#trial, #trial1, #trial2, #trial3{
 
+    border-color: #f1bfdd;
+    border-radius: 5em;
+    background-color:#DC143C;
+}
+
+a{
+    font-style: oblique;
+    color: white;
+    font-size: medium;
+}
