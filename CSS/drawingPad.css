@@ -1,34 +1,34 @@
-.base{
-    position:relative;
-    /*100px is shape at position*/
-    background: radial-gradient(circle at 100px 100px, #eabfbf 40%, #d60d6b, #ff00bf);
-    height: 300px;
-    width: 20px;
-    margin-top:100px;
-    border-radius: 10px;
-    text-shadow: #c1173f;
-    margin-left: 75px;
+/*.base{*/
+/*    position:relative;*/
+/*    !*100px is shape at position*!*/
+/*    background: radial-gradient(circle at 100px 100px, #eabfbf 40%, #d60d6b, #ff00bf);*/
+/*    height: 300px;*/
+/*    width: 20px;*/
+/*    margin-top:100px;*/
+/*    border-radius: 10px;*/
+/*    text-shadow: #c1173f;*/
+/*    margin-left: 75px;*/
 
 
 
-}
-.circle{
-    position:absolute;
-    /*100px is shape at position*/
-    background: radial-gradient(circle at 100px 100px, #f97dc3 10%, #fd1f9d 20%,
-    #7febfb 30%, #1dc5de 40%,
-    #f9eb91 60%, #f2d200 60%,
-    #ed94f9 30%, #dc21f5 75%,
-    #b4fda4 40%, #2e21e8 90%);
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    text-shadow: #c1173f;
-    left:50%;
-    /*margin-left:auto;*/
-    top: -40px;
-    margin-right: auto;
-}
+/*}*/
+/*.circle{*/
+/*    position:absolute;*/
+/*    !*100px is shape at position*!*/
+/*    background: radial-gradient(circle at 100px 100px, #f97dc3 10%, #fd1f9d 20%,*/
+/*    #7febfb 30%, #1dc5de 40%,*/
+/*    #f9eb91 60%, #f2d200 60%,*/
+/*    #ed94f9 30%, #dc21f5 75%,*/
+/*    #b4fda4 40%, #2e21e8 90%);*/
+/*    border-radius: 50%;*/
+/*    height: 150px;*/
+/*    width: 150px;*/
+/*    text-shadow: #c1173f;*/
+/*    left:50%;*/
+/*    !*margin-left:auto;*!*/
+/*    top: -40px;*/
+/*    margin-right: auto;*/
+/*}*/
 
 
 
@@ -47,3 +47,4 @@
 /*    text-shadow: #c1173f;*/
 
 /*}*/
+
