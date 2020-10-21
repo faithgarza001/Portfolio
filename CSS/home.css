@@ -686,3 +686,8 @@ a{
     color: white;
     font-size: medium;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
