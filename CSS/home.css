@@ -679,9 +679,10 @@ footer .column i + i {
     }
 
 }
-
-button#trial, #trial1, #trial2, #trial3,#trial4,#trial5{
-
+/*PROJECT CARDS FOR INDEX AND PORTFOLIO PAGE*/
+button#trial, #trial1, #trial2, #trial3,#trial4,
+/*the classes below are from portfolio page*/
+#trial5,#trial6,#trial7,#trial8 {
     border-color: #f1bfdd;
     border-radius: 5em;
     background-color:#DC143C;
@@ -697,4 +698,8 @@ a{
     float: left;
     width: 33.33%;
 }
+
+
+
+
 
