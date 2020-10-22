@@ -520,7 +520,9 @@ footer .column i + i {
 /*    animation: line-anim 2s ease forwards 0.3s;*/
 
 /*}*/
-
+#achievement,#contributions,#skillsP{
+    color: white;
+}
 
 
 
