@@ -338,6 +338,10 @@ header .container .col-md-7 p {
 
 /* Section Team */
 
+blockquote{
+    color: white;
+}
+
 .section-4 .container h1 {
     font-size: 6vmin;
     padding-top: 14vmin;
@@ -392,7 +396,7 @@ footer .input-group .input-group-text {
     border: none;
 }
 
-footer .column i {
+footer .row i {
     color: #dd2476;
 }
 
