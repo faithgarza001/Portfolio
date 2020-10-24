@@ -80,11 +80,11 @@
 //
 // });
 //
-import (openWeatherMap)
+import k from './keys.js'
 /**THIS IS THE END OF API EXAMPLE BELOW BEGINS THE WEATHER APP**/
 
 const api = {
-    key: openWeatherMap,
+    key: k,
     base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -92,7 +92,7 @@ const searchbox = document.querySelector('.search-box');
 searchbox.addEventListener('keypress', setQuery);
 
 function setQuery(evt) {
-    if (evt.keyCode == 13) {
+    if (evt.keyCode === 13) {
         getResults(searchbox.value);
 
     }
