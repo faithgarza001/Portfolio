@@ -8,4 +8,4 @@
 /httpRequests/
 node_modules
 
-keys.js
+/WeatherMap/keys.js

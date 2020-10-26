@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Portfolio.iml" filepath="$PROJECT_DIR$/Portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/angularHighCharts/angularHighCharts.iml" filepath="$PROJECT_DIR$/angularHighCharts/angularHighCharts.iml" />
       <module fileurl="file://$PROJECT_DIR$/weatherMap/weatherMap.iml" filepath="$PROJECT_DIR$/weatherMap/weatherMap.iml" />
     </modules>
   </component>
