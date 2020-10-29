@@ -8,7 +8,8 @@
     "test": "ng test highcharts-angular",
     "lint": "ng lint highcharts-angular",
     "release": "cd ./highcharts-angular && standard-version && cd ../ && node tasks/build.js && node tasks/release.js",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "githubpage": "ng build --outputPath=docs --base-href=https://faithgarza001.github.io/Portfolio/"
   },
   "private": true,
   "dependencies": {

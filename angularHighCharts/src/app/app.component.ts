@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import {donutCharOptions} from './helpers/donutChartOptions';
-import {Chart} from 'highcharts';
+import { Chart } from 'angular-highcharts';
+import { donutCharOptions } from './helpers/donutChartOptions';
 
 
 @Component({
@@ -10,5 +10,5 @@ import {Chart} from 'highcharts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  chart = new Chart(donutCharOptions);
+  donutChart = new Chart(donutCharOptions);
 }
