@@ -15,20 +15,27 @@ initial-scale=1">
     </script>
 </head>
 <body>
+
+<!--this div is where the high-chart will go-->
 <div id="container"style="min-width: 310px; height: 400px;
 margin: auto"></div>
 <script type="text/javascript">
-    var charts = new Highcharts.Chart({
+// creating new High-chart object with defined properties
+    let charts = new Highcharts.Chart({
         chart: {
+            // the renderTo property defines where you want the chart in the HTML
             renderTo: 'container',
             type: 'column'
         },
+        //setting the title
         title: {
             text: 'Monthly Sales Chart Department Wise'
         },
+        //setting the subtitle for the chart
         subtitle: {
             text: 'Year 2018'
         },
+        //categories for xAxis array of labels for each data point
         xAxis: {
             categories: [
                 'Jan',
@@ -45,6 +52,7 @@ margin: auto"></div>
                 'Dec'
             ],
         },
+        //yAxis min value set at 0 never negative number
         yAxis: {
             min: 0,
             title: {
@@ -52,8 +60,11 @@ margin: auto"></div>
             }
 
         },
+        //series essential property
         series: [{
+            //name defining what type of data collection you're setting helpful when user hovers in graph
             name: 'Marketing Department',
+            //data refers to collection of data in the form of an array
             data: [49.9, 51.5, 32.0, 82.0, 75.0, 66.0, 32.0, 25.0,
                 35.4, 65.1, 58.6, 34.4]
         },
@@ -62,13 +73,7 @@ margin: auto"></div>
                 data: [40.5, 34.5, 84.4, 39.2, 23.2, 45.0, 55.6, 18.5, 26.4, 14.1, 23.6, 84.4]
             }]
     });
-
-
-
-
-
-
-    </script>
+</script>
 
 </body>
 </html>
