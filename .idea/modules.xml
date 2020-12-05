@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/CoffeeJS/CoffeeJS.iml" filepath="$PROJECT_DIR$/CoffeeJS/CoffeeJS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Portfolio.iml" filepath="$PROJECT_DIR$/Portfolio.iml" />
       <module fileurl="file://$PROJECT_DIR$/angularHighCharts/angularHighCharts.iml" filepath="$PROJECT_DIR$/angularHighCharts/angularHighCharts.iml" />
-      <module fileurl="file://$PROJECT_DIR$/weatherMap/weatherMap.iml" filepath="$PROJECT_DIR$/weatherMap/weatherMap.iml" />
     </modules>
   </component>
 </project>

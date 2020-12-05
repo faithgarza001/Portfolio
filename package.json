@@ -4,7 +4,7 @@
   "type": "module",
   "description": "",
   "main": "index.js",
-  "scripts": {x
+  "scripts": {
     "deploy": "gh-pages -d .idea"
   },
   "keywords": [],
