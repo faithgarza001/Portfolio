@@ -45,6 +45,20 @@ blockquote, .late {
 
 }
 
+
+sub{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+/**Animations Styling for the project cards third section*/
+#one, #two, #three, #four {
+    transition: transform 0.3s ease-in;
+    transform-origin: top left;
+}
+
+
+
+
 /*This the the styling for the resume page*/
 
 
@@ -59,7 +73,9 @@ blockquote, .late {
 
 }
 
-
+.card-title:hover{
+   color: red;
+}
 .dropdown-content {
     display: none;
     position: absolute;
