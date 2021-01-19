@@ -12,6 +12,26 @@
           crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/home.css" />
     <!--    <link rel="stylesheet" href="./mobile-style.css">-->
+    <script>
+        document.documentElement.className = 'js';
+        var supportsCssVars = function() {
+            var e,
+                t = document.createElement('style');
+            return (
+                (t.innerHTML = 'root: { --tmp-var: bold; }'),
+                    document.head.appendChild(t),
+                    (e = !!(
+                        window.CSS &&
+                        window.CSS.supports &&
+                        window.CSS.supports('font-weight', 'var(--tmp-var)')
+                    )),
+                    t.parentNode.removeChild(t),
+                    e
+            );
+        };
+        supportsCssVars() ||
+        alert('Please view this demo in a modern browser that supports CSS Variables.');
+    </script>
 </head>
 
 <body>
@@ -340,7 +360,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<!--<script src="JS/main.js"></script>-->
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
